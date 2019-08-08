@@ -67,8 +67,8 @@ extension CGSize {
 }
 
 extension CGPoint {
-    func offsetBy(dx: CGFloat, dy: CGFloat) -> CGPoint {
-        return CGPoint(x: x+dx, y: y+dy)
+    func offsetBy(diffX: CGFloat, diffY: CGFloat) -> CGPoint {
+        return CGPoint(x: x+diffX, y: y+diffY)
     }
     static func random(in rect: CGRect) -> CGPoint {
         return CGPoint(x: CGFloat.random(in: rect.minX...rect.maxX), y: CGFloat.random(in: rect.minY...rect.maxY))
